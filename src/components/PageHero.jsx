@@ -27,7 +27,7 @@ export const PageHero = ({ eyebrow, title, subtitle, image }) => (
     </div>
     <div className="container-x relative z-10 mt-12 hidden md:block">
       <div className="flex items-center justify-between border-t border-cocoa/15 pt-5 text-xs uppercase tracking-[0.3em] text-cocoa/55">
-        <span>Shaarav Global Ventures</span>
+        <span>Shaarav Global Add EXIM</span>
         <span>India · Origin</span>
         <span>Premium Editorial</span>
         <span>Vol. 26 · 2026</span>
