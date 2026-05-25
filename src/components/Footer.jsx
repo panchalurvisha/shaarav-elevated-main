@@ -10,7 +10,7 @@ export const Footer = () => (
           <img src={logo} alt="Shaarav" className="h-10 w-10 invert opacity-90" width={40} height={40} />
           <div>
             <div className="font-display text-2xl">SHAARAV</div>
-            <div className="text-[10px] tracking-[0.3em] uppercase text-paper/60">Global Ventures</div>
+            <div className="text-[10px] tracking-[0.3em] uppercase text-paper/60">Global Add EXIM</div>
           </div>
         </div>
         <p className="mt-6 text-paper/70 max-w-sm leading-relaxed">
@@ -45,15 +45,15 @@ export const Footer = () => (
       <div className="md:col-span-3">
         <div className="text-xs uppercase tracking-[0.25em] text-paper/50 mb-4">Contact</div>
         <ul className="space-y-3 text-paper/80 text-sm">
-          <li className="flex gap-3"><MapPin size={16} className="mt-1 shrink-0" /> Shaarav Global Ventures, Mumbai, India</li>
-          <li className="flex gap-3"><Phone size={16} className="mt-1 shrink-0" /> +91 98765 43210</li>
+          <li className="flex gap-3"><MapPin size={16} className="mt-1 shrink-0" /> Shaarav Global Add EXIM, Mumbai, India</li>
+          <li className="flex gap-3"><Phone size={16} className="mt-1 shrink-0" /> +91 9023671539</li>
           <li className="flex gap-3"><Mail size={16} className="mt-1 shrink-0" /> hello@shaaravglobal.com</li>
         </ul>
       </div>
     </div>
     <div className="border-t border-paper/10">
       <div className="container-x py-6 flex flex-col md:flex-row gap-3 items-center justify-between text-xs text-paper/50">
-        <div>© {new Date().getFullYear()} Shaarav Global Ventures. All rights reserved.</div>
+        <div>© {new Date().getFullYear()} Shaarav Global Add EXIM. All rights reserved.</div>
         <div className="flex gap-6">
           <a href="#" className="hover:text-primary">Privacy</a>
           <a href="#" className="hover:text-primary">Terms</a>
