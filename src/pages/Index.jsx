@@ -1,6 +1,7 @@
 import { ArrowRight, CheckCircle2, Globe2, Leaf, PackageCheck, ShieldCheck, Sparkles, Truck } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Layout } from "@/components/Layout";
+import { TestimonialCarousel } from "@/components/TestimonialCarousel";
 import heroSpices from "@/assets/hero-spices.jpg";
 import masalaBox from "@/assets/masala-box.jpg";
 import productTurmeric from "@/assets/product-turmeric.jpg";
@@ -16,29 +17,65 @@ import mortar from "@/assets/mortar.jpg";
 import macroTurmeric from "@/assets/macro-turmeric.jpg";
 import macroChili from "@/assets/macro-chili.jpg";
 
-const products = [
-  { name: "SHAARAV Turmeric Powder", image: productTurmeric, note: "High-curcumin golden powder" },
-  { name: "SHAARAV Red Chilli", image: productChili, note: "Deep colour, clean heat" },
-  { name: "SHAARAV Coriander", image: productCoriander, note: "Citrus-green aroma" },
-  { name: "SHAARAV Garam Masala", image: productGaram, note: "Balanced house blend" },
-];
+import { ProductCarousel } from "@/components/ProductCarousel";
+import { products as catalogProducts } from "@/lib/products";
 
-const stats = ["42+ source clusters", "31 quality checks", "18 export lanes", "100% batch traceability"];
+const stats = ["1,500 + Happy Customers", "4 + years Years of Experience", "500 + Total Projects", "100% Export Quality"];
 const steps = ["Farm selection", "Cleaning", "Low-heat grinding", "Metal detection", "Aroma locking", "Export packing"];
+
+const testimonials = [
+  {
+    quote: "Shaarav has completely transformed our spice supply chain. The consistency in aroma, colour, and overall quality across every single batch is exactly what our premium retail brand demanded.",
+    author: "Elena R.",
+    role: "Procurement Director",
+    company: "EuroFoods"
+  },
+  {
+    quote: "Their export documentation and logistics readiness are simply top-tier. Shipments arrive on time with impeccable packaging, making customs and distribution a breeze.",
+    author: "Michael T.",
+    role: "Head of Operations",
+    company: "Global Spice Co."
+  },
+  {
+    quote: "The private label service they offer is remarkably seamless. We successfully launched our premium masala line in record time, thanks to their dedicated end-to-end support.",
+    author: "Aisha M.",
+    role: "Founder",
+    company: "Pure Flavours"
+  },
+  {
+    quote: "Finding a partner who understands the nuances of regional spice blends is rare. Shaarav nailed our custom requirements perfectly on the first try.",
+    author: "Rajiv S.",
+    role: "Supply Chain Manager",
+    company: "Desi Eats Inc."
+  },
+  {
+    quote: "The traceability from farm to export carton gives us complete confidence. It's the level of transparency we need for our modern, health-conscious consumers.",
+    author: "Sarah J.",
+    role: "Quality Assurance Lead",
+    company: "Organic Provisions"
+  },
+  {
+    quote: "Shaarav’s apothecary jar packaging elevated our store shelves instantly. Beautiful presentation matching incredible flavor depth.",
+    author: "Marcus L.",
+    role: "Retail Director",
+    company: "Artisan Grocers UK"
+  }
+];
 
 const Index = () => (
   <Layout>
     <section className="section-screen bg-paper">
       <div className="absolute inset-0">
-        <img src={heroSpices} alt="Premium Indian spices arranged for Shaarav Global Ventures" className="h-full w-full object-cover" />
+        <img src={heroSpices} alt="Premium Indian spices arranged for Shaarav Global Add EXIM" className="h-full w-full object-cover" />
         <div className="absolute inset-0 bg-paper/70" />
       </div>
       <div className="container-x relative z-10 grid items-center gap-10 lg:grid-cols-12">
         <div className="fade-up lg:col-span-7">
-          <span className="eyebrow">Premium Indian Spice Exporters</span>
-          <h1 className="display-xl mt-5 max-w-4xl text-cocoa">SHAARAV Global Ventures</h1>
+          <span className="eyebrow">Where Quality Meets Tradition</span>
+          <h1 className="display-xl mt-5 max-w-4xl text-cocoa">Shaarav Global Add EXIM</h1>
+          <h2 className="mt-4 font-display text-3xl text-cocoa">Pure Flavors. Global Reach</h2>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-cocoa/75 md:text-xl">
-            Authentic spices, polished packaging, strict quality systems, and export-ready consistency for modern global food businesses.
+            At Shaarav Global Venture, we believe that quality spices are the soul of every kitchen. Founded with a vision to bring India’s rich legacy of spices to every corner of the globe, we specialize in the export of premium whole and powdered spices. With a strong commitment to purity, freshness, and authenticity, we source directly from trusted farmers and processing units to ensure that only the finest products reach our clients.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link to="/products" className="inline-flex items-center gap-2 bg-primary px-6 py-3 text-primary-foreground transition-colors hover:bg-cocoa">
@@ -58,15 +95,44 @@ const Index = () => (
     <section className="section-screen bg-background">
       <div className="container-x grid items-center gap-12 lg:grid-cols-12">
         <div className="lg:col-span-5">
-          <span className="eyebrow">Built Beyond Basic</span>
-          <h2 className="display-lg mt-5 text-cocoa">A spice house designed for premium shelves.</h2>
+          <span className="eyebrow">Our Mission</span>
+          <h2 className="display-lg mt-5 text-cocoa">To deliver the authentic taste of India to kitchens across the globe by exporting high-quality whole and powdered spices.</h2>
         </div>
         <div className="lg:col-span-7">
           <p className="text-2xl leading-relaxed text-cocoa/80">
-            Shaarav brings farm-linked sourcing, controlled processing, export documentation, and retail-grade packs into one disciplined supply partner.
+            We are committed to maintaining the highest standards of purity, freshness, and ethical sourcing — empowering local farmers, delighting global consumers, and building lasting business relationships.
           </p>
           <div className="mt-10 grid gap-4 sm:grid-cols-2">
             {stats.map((item) => <div key={item} className="border-l-2 border-primary bg-paper p-5 text-xl font-medium text-cocoa shadow-soft">{item}</div>)}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section className="section-screen bg-paper">
+      <div className="container-x">
+        <div className="mb-12">
+          <span className="eyebrow">Our Products</span>
+          <h2 className="display-lg mt-5 text-cocoa">Premium Range</h2>
+        </div>
+        <div className="grid gap-8 lg:grid-cols-3">
+          <div className="bg-surface p-8 shadow-soft">
+            <h3 className="font-display text-2xl text-cocoa mb-4">Whole Spices</h3>
+            <p className="leading-relaxed text-cocoa/75">
+              Whole spices are the soul of traditional cooking — unprocessed, unadulterated, and packed with intense aroma and natural oils. At Shaarav Global Venture, we offer a premium range of whole spices like black pepper, cumin seeds, cloves, cardamom, bay leaves, and more, handpicked from trusted farms and packed to preserve freshness.
+            </p>
+          </div>
+          <div className="bg-surface p-8 shadow-soft">
+            <h3 className="font-display text-2xl text-cocoa mb-4">Powder Spices</h3>
+            <p className="leading-relaxed text-cocoa/75">
+              Our powdered spices are finely ground to perfection, capturing the bold aroma, vibrant color, and rich taste of India’s finest spice crops. Whether it’s turmeric, red chili, coriander, or spice blends, each batch is processed under strict hygiene and quality standards to ensure purity and consistency.
+            </p>
+          </div>
+          <div className="bg-surface p-8 shadow-soft">
+            <h3 className="font-display text-2xl text-cocoa mb-4">Tea & Coffee</h3>
+            <p className="leading-relaxed text-cocoa/75">
+              Our premium teas are handpicked from the lush plantations of India, offering rich aroma, natural freshness, and calming flavors. Whether you crave the soothing touch of green tea or the bold essence of Assam, every cup brings you closer to nature’s comfort.
+            </p>
           </div>
         </div>
       </div>
@@ -78,15 +144,7 @@ const Index = () => (
           <div><span className="eyebrow">Catalogue</span><h2 className="display-md mt-4 text-cocoa">Signature SHAARAV range</h2></div>
           <Link to="/products" className="inline-flex items-center gap-2 text-primary hover:text-cocoa">Full catalogue <ArrowRight size={18} /></Link>
         </div>
-        <div className="grid gap-5 md:grid-cols-4">
-          {products.map((product) => (
-            <article key={product.name} className="group bg-paper p-4 shadow-soft">
-              <div className="aspect-[4/5] overflow-hidden bg-background"><img src={product.image} alt={product.name} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" /></div>
-              <h3 className="mt-5 font-display text-2xl text-cocoa">{product.name}</h3>
-              <p className="mt-2 text-sm text-muted-foreground">{product.note}</p>
-            </article>
-          ))}
-        </div>
+        <ProductCarousel products={catalogProducts} />
       </div>
     </section>
 
@@ -207,10 +265,25 @@ const Index = () => (
       </div>
     </section>
 
+    <section className="section-screen bg-surface">
+      <div className="container-x">
+        <div className="flex items-end justify-between mb-8">
+          <div>
+            <span className="eyebrow">Client Voices</span>
+            <h2 className="display-md mt-3 text-cocoa whitespace-nowrap">Trusted by global food businesses.</h2>
+          </div>
+          <p className="hidden md:block text-sm text-cocoa/50 max-w-xs text-right">Drag or hover to scroll · auto-scrolls on its own</p>
+        </div>
+      </div>
+      <div className="w-full px-6 md:px-10">
+        <TestimonialCarousel testimonials={testimonials} />
+      </div>
+    </section>
+
     <section className="section-screen bg-background">
       <div className="container-x grid items-center gap-10 lg:grid-cols-12">
-        <div className="lg:col-span-8"><span className="eyebrow">Start a Trade Conversation</span><h2 className="display-lg mt-5 text-cocoa">Send us your required spice, grade, pack size, and destination.</h2></div>
-        <div className="lg:col-span-4"><Link to="/contact" className="inline-flex w-full items-center justify-center gap-3 bg-primary px-8 py-5 text-lg text-primary-foreground transition-colors hover:bg-cocoa">Request Export Quote <ArrowRight /></Link></div>
+        <div className="lg:col-span-8"><span className="eyebrow">GEt in Touch</span><h2 className="display-lg mt-5 text-cocoa">Rooted in India, Reaching the World.</h2></div>
+        <div className="lg:col-span-4"><Link to="/contact" className="inline-flex w-full items-center justify-center gap-3 bg-primary px-8 py-5 text-lg text-primary-foreground transition-colors hover:bg-cocoa">Get in Touch <ArrowRight /></Link></div>
       </div>
     </section>
   </Layout>

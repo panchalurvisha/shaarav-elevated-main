@@ -21,7 +21,7 @@ const pageData = {
   about: {
     eyebrow: "About Shaarav",
     title: "A modern Indian spice house with editorial discipline.",
-    subtitle: "Shaarav Global Ventures connects deep Indian spice origins with the standards international buyers expect.",
+    subtitle: "Shaarav Global Add EXIM connects deep Indian spice origins with the standards international buyers expect.",
     image: farmerField,
     intro: {
       kicker: "Manifesto",
@@ -163,15 +163,15 @@ const pageData = {
       statement: "We respond to qualified import, distribution, retail, and private-label inquiries with feasibility, sample plan, and quote.",
       meta: [
         { label: "Email", value: "hello@shaaravglobal.com" },
-        { label: "Phone", value: "+91 98765 43210" },
+        { label: "Phone", value: "+91 9023671539" },
         { label: "Office", value: "Mumbai, India" },
         { label: "Response", value: "Within 24h (Mon–Sat)" },
       ],
     },
     sections: [
       { tag: "Email", heading: "hello@shaaravglobal.com", text: "Best for new inquiries with attached requirement files." },
-      { tag: "Phone", heading: "+91 98765 43210", text: "Direct line to the Shaarav trade desk." },
-      { tag: "Location", heading: "Shaarav Global Ventures, Mumbai.", text: "Office and coordination hub for sourcing, quality, and dispatch." },
+      { tag: "Phone", heading: "+91 9023671539", text: "Direct line to the Shaarav trade desk." },
+      { tag: "Location", heading: "Shaarav Global Add EXIM, Mumbai.", text: "Office and coordination hub for sourcing, quality, and dispatch." },
       { tag: "Requirement", heading: "What to share with us.", text: "Spice name, form, quantity, pack size, destination port, and required arrival window.", image: masalaBox },
       { tag: "Samples", heading: "Sample dispatch.", text: "Sample dispatch is offered for qualified import or distribution requirements after a short discovery call." },
       { tag: "Private label", heading: "Custom packs.", text: "Share artwork, pack structure, and target market — we will respond with feasibility and timing.", image: mortar },
@@ -247,6 +247,58 @@ const renderSection = (s, index, accent) => {
   );
 };
 
+const AboutJourney = () => {
+  const journeySteps = [
+    { year: "2010", title: "The Foundation", text: "Shaarav started with a simple vision to connect local spice farmers directly with regional markets, focusing purely on raw, unadulterated quality.", image: farmerField },
+    { year: "2015", title: "Processing & Refining", text: "We established our first dedicated processing unit, allowing us to control grinding, cleaning, and sorting. This marked our shift towards premium standardisation.", image: mortar },
+    { year: "2019", title: "Global Export Initiation", text: "With FSSAI and APEDA certifications secured, Shaarav began its first major export operations to the Middle East and European markets.", image: exportShip },
+    { year: "2024", title: "A Modern Spice House", text: "Today, Shaarav stands as a premium export partner, offering fully traceable, lab-tested, and private-label ready spices for discerning global brands.", image: qualityLab }
+  ];
+
+  return (
+    <section className="section-screen bg-background relative py-24">
+      <div className="container-x">
+        <div className="mb-24 text-center max-w-2xl mx-auto">
+          <span className="eyebrow">The Timeline</span>
+          <h2 className="display-lg mt-6 text-cocoa">A journey of flavour, discipline, and growth.</h2>
+        </div>
+        
+        <div className="relative max-w-5xl mx-auto">
+          {/* Vertical line - hidden on mobile, centered on desktop */}
+          <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-primary/20 transform -translate-x-1/2" />
+          
+          <div className="space-y-20 md:space-y-32">
+            {journeySteps.map((step, index) => {
+              const isEven = index % 2 === 0;
+              return (
+                <div key={step.year} className={`relative flex flex-col md:flex-row items-center gap-10 md:gap-16 ${isEven ? 'md:flex-row-reverse' : ''}`}>
+                  
+                  {/* Timeline dot (desktop only) */}
+                  <div className="hidden md:block absolute left-1/2 top-1/2 w-4 h-4 bg-primary transform -translate-x-1/2 -translate-y-1/2 shadow-[0_0_0_8px_#fcfbf9]" />
+                  
+                  {/* Content */}
+                  <div className={`w-full md:w-1/2 ${isEven ? 'md:text-left' : 'md:text-right'}`}>
+                     <div className="inline-block px-4 py-2 bg-paper shadow-soft mb-6 text-sm font-display tracking-[0.2em] text-primary">{step.year}</div>
+                     <h3 className="font-display text-4xl text-cocoa">{step.title}</h3>
+                     <p className="mt-5 text-lg text-cocoa/75 leading-relaxed">{step.text}</p>
+                  </div>
+
+                  {/* Image */}
+                  <div className="w-full md:w-1/2">
+                     <div className="aspect-[4/3] w-full overflow-hidden shadow-deep border border-border/50">
+                       <img src={step.image} alt={step.title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                     </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
 export const InnerPage = ({ page }) => {
   const data = pageData[page];
   return (
@@ -282,7 +334,11 @@ export const InnerPage = ({ page }) => {
         </div>
       </section>
 
-      {data.sections.map((s, i) => renderSection(s, i, data.eyebrow))}
+      {page === "about" ? (
+        <AboutJourney />
+      ) : (
+        data.sections.map((s, i) => renderSection(s, i, data.eyebrow))
+      )}
 
       {/* Pull quote section */}
       <section className="section-screen bg-cocoa text-paper">
@@ -294,7 +350,7 @@ export const InnerPage = ({ page }) => {
           <p className="mx-auto mt-10 max-w-4xl font-display text-3xl leading-snug text-paper md:text-5xl">
             "{data.pull}"
           </p>
-          <div className="mt-10 text-xs uppercase tracking-[0.3em] text-paper/60">Shaarav Global Ventures</div>
+          <div className="mt-10 text-xs uppercase tracking-[0.3em] text-paper/60">Shaarav Global Add EXIM</div>
         </div>
       </section>
 
@@ -303,7 +359,7 @@ export const InnerPage = ({ page }) => {
           <div className="container-x grid gap-10 lg:grid-cols-3">
             {[
               { Icon: Mail, label: "Email", value: "hello@shaaravglobal.com" },
-              { Icon: Phone, label: "Phone", value: "+91 98765 43210" },
+              { Icon: Phone, label: "Phone", value: "+91 9023671539" },
               { Icon: MapPin, label: "Office", value: "Mumbai · India" },
             ].map(({ Icon, label, value }) => (
               <div key={label} className="border border-border bg-surface p-10 shadow-soft">
