@@ -9,7 +9,7 @@ export const ContactIntro = () => (
         <h2 className="display-md mt-6 text-cocoa">In brief.</h2>
         <p className="mt-6 text-cocoa/65">A short orientation before the chapters.</p>
         <div className="mt-10 border-t border-border">
-          {[{"label":"Email","value":"hello@shaaravglobal.com"},{"label":"Phone","value":"+91 9023671539"},{"label":"Office","value":"Mumbai, India"},{"label":"Response","value":"Within 24h (Mon–Sat)"}].map((m) => (
+          {[{"label":"Email","value":"hello@shaaravglobalventures.com"},{"label":"Phone 1","value":"+91 99255 28021"},{"label":"Phone 2","value":"+91 90236 71539"},{"label":"Office","value":"Ahmedabad, India"},{"label":"Response","value":"Within 24h (Mon–Sat)"}].map((m) => (
             <div key={m.label} className="flex items-baseline justify-between border-b border-border py-4">
               <span className="text-xs uppercase tracking-[0.3em] text-cocoa/55">{m.label}</span>
               <span className="font-display text-lg text-cocoa">{m.value}</span>

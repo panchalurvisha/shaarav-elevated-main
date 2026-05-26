@@ -10,7 +10,7 @@ const links = [
   { to: "/quality", label: "Quality" },
   { to: "/sustainability", label: "Sustainability" },
   { to: "/export", label: "Export" },
-  { to: "/contact", label: "Contact" },
+
 ];
 
 export const Navbar = () => {

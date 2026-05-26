@@ -45,9 +45,10 @@ export const Footer = () => (
       <div className="md:col-span-3">
         <div className="text-xs uppercase tracking-[0.25em] text-paper/50 mb-4">Contact</div>
         <ul className="space-y-3 text-paper/80 text-sm">
-          <li className="flex gap-3"><MapPin size={16} className="mt-1 shrink-0" /> Shaarav Global Add EXIM, Mumbai, India</li>
-          <li className="flex gap-3"><Phone size={16} className="mt-1 shrink-0" /> +91 9023671539</li>
-          <li className="flex gap-3"><Mail size={16} className="mt-1 shrink-0" /> hello@shaaravglobal.com</li>
+          <li className="flex gap-3"><MapPin size={16} className="mt-1 shrink-0" /> <a href="https://maps.google.com/?q=B7-1601+Waterlily+Adani+Shantigram+Ahmedabad+382421" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">B7-1601, Waterlily, Adani Shantigram, Nr Vaishnodevi Circle, Ahmedabad-382421</a></li>
+          <li className="flex gap-3"><Phone size={16} className="mt-1 shrink-0" /> <a href="tel:+919925528021" className="hover:text-primary transition-colors">+91 99255 28021</a></li>
+          <li className="flex gap-3"><Phone size={16} className="mt-1 shrink-0" /> <a href="tel:+919023671539" className="hover:text-primary transition-colors">+91 90236 71539</a></li>
+          <li className="flex gap-3"><Mail size={16} className="mt-1 shrink-0" /> <a href="mailto:hello@shaaravglobalventures.com" className="hover:text-primary transition-colors">hello@shaaravglobalventures.com</a></li>
         </ul>
       </div>
     </div>

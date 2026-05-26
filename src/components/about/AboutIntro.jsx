@@ -9,7 +9,7 @@ export const AboutIntro = () => (
         <h2 className="display-md mt-6 text-cocoa">In brief.</h2>
         <p className="mt-6 text-cocoa/65">A short orientation before the chapters.</p>
         <div className="mt-10 border-t border-border">
-          {[{"label":"Founded","value":"India"},{"label":"Focus","value":"Premium Export"},{"label":"Discipline","value":"Sourcing · Process · Pack"},{"label":"Audience","value":"Retail · HoReCa · Private Label"}].map((m) => (
+          {[{ "label": "Founded", "value": "India" }, { "label": "Focus", "value": "Premium Export" }, { "label": "Discipline", "value": "Sourcing · Process · Pack" }, { "label": "Audience", "value": "Retail · HoReCa · Private Label" }].map((m) => (
             <div key={m.label} className="flex items-baseline justify-between border-b border-border py-4">
               <span className="text-xs uppercase tracking-[0.3em] text-cocoa/55">{m.label}</span>
               <span className="font-display text-lg text-cocoa">{m.value}</span>
