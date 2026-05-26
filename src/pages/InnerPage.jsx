@@ -2,20 +2,20 @@ import { ArrowRight, CheckCircle2, Mail, MapPin, Phone, Quote } from "lucide-rea
 import { Link } from "react-router-dom";
 import { Layout } from "@/components/Layout";
 import { PageHero } from "@/components/PageHero";
-import heroSpices from "@/assets/hero-spices.jpg";
+import heroSpices from "@/assets/hero-spices-new.png";
 import masalaBox from "@/assets/masala-box.jpg";
-import productTurmeric from "@/assets/product-turmeric.jpg";
-import productChili from "@/assets/product-chili.jpg";
-import productCoriander from "@/assets/product-coriander.jpg";
-import productGaram from "@/assets/product-garam.jpg";
-import farmerField from "@/assets/farmer-field.jpg";
-import qualityLab from "@/assets/quality-lab.jpg";
-import spiceMarket from "@/assets/spice-market.jpg";
-import exportShip from "@/assets/export-ship.jpg";
+import productTurmeric from "@/assets/turmeric-bowl.png";
+import productChili from "@/assets/chili-bowl.png";
+import productCoriander from "@/assets/coriander-bowl.png";
+import productGaram from "@/assets/garam-masala-bowl.png";
+import farmerField from "@/assets/farmer-field-new.png";
+import qualityLab from "@/assets/quality-lab-new.png";
+import spiceMarket from "@/assets/market-spices-new.png";
+import exportShip from "@/assets/export-ship-new.png";
 import worldMap from "@/assets/world-map.jpg";
-import macroTurmeric from "@/assets/macro-turmeric.jpg";
-import macroChili from "@/assets/macro-chili.jpg";
-import mortar from "@/assets/mortar.jpg";
+import macroTurmeric from "@/assets/premium-spices.png";
+import macroChili from "@/assets/macro-chili-new.png";
+import mortar from "@/assets/mortar-new.png";
 
 const pageData = {
   about: {
@@ -61,10 +61,10 @@ const pageData = {
       ],
     },
     sections: [
-      { tag: "Signature", heading: "SHAARAV Turmeric Powder", text: "High-curcumin, deep-golden grind. Engineered for both retail visibility and ingredient performance.", image: productTurmeric },
-      { tag: "Signature", heading: "SHAARAV Red Chilli", text: "Bright colour value, balanced heat — available across mild, medium, and hot SHU bands.", image: productChili },
-      { tag: "Signature", heading: "SHAARAV Coriander", text: "Fresh, citrus-green aroma. Available as seed and powder, with controlled mesh sizes.", image: productCoriander },
-      { tag: "Signature", heading: "SHAARAV Garam Masala", text: "A balanced house blend — the everyday backbone of Indian cooking, in a premium pack.", image: productGaram },
+      { tag: "Signature", heading: "SHAARAV Turmeric Powder", text: "High-curcumin, deep-golden grind. Engineered for both retail visibility and ingredient performance.", image: productTurmeric, link: "/products/turmeric-powder" },
+      { tag: "Signature", heading: "SHAARAV Red Chilli", text: "Bright colour value, balanced heat — available across mild, medium, and hot SHU bands.", image: productChili, link: "/products/red-chilli" },
+      { tag: "Signature", heading: "SHAARAV Coriander", text: "Fresh, citrus-green aroma. Available as seed and powder, with controlled mesh sizes.", image: productCoriander, link: "/products/coriander" },
+      { tag: "Signature", heading: "SHAARAV Garam Masala", text: "A balanced house blend — the everyday backbone of Indian cooking, in a premium pack.", image: productGaram, link: "/products/garam-masala" },
       { tag: "Whole spices", heading: "The supporting cast.", text: "Cumin, fennel, mustard, fenugreek, cloves, cardamom, cinnamon — sourced for aroma first." },
       { tag: "Blends", heading: "Beyond the everyday.", text: "Kitchen King, Chana, Pav Bhaji, Biryani, Tea Masala — and custom recipes co-developed with you.", image: mortar },
       { tag: "Pack formats", heading: "Built for every shelf.", text: "Soft-touch pouches, heritage cartons, apothecary jars, bulk kraft, and full export cartons." },
@@ -194,7 +194,13 @@ const renderSection = (s, index, accent) => {
           <div className={`lg:col-span-7 ${flip ? "lg:order-2" : ""}`}>
             <div className="relative">
               <div className={`absolute ${flip ? "-right-6" : "-left-6"} -top-6 hidden h-32 w-32 border border-primary/40 lg:block`} />
-              <img src={s.image} alt={s.heading} className="relative h-[64vh] w-full object-cover shadow-deep" />
+              {s.link ? (
+                <Link to={s.link} className="block overflow-hidden relative shadow-deep group">
+                  <img src={s.image} alt={s.heading} className="h-[64vh] w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                </Link>
+              ) : (
+                <img src={s.image} alt={s.heading} className="relative h-[64vh] w-full object-cover shadow-deep" />
+              )}
             </div>
           </div>
           <div className={`lg:col-span-5 ${flip ? "lg:order-1" : ""}`}>
@@ -205,6 +211,11 @@ const renderSection = (s, index, accent) => {
             </div>
             <h2 className="display-md mt-8 text-cocoa">{s.heading}</h2>
             <p className="mt-6 text-lg leading-relaxed text-cocoa/75">{s.text}</p>
+            {s.link && (
+              <Link to={s.link} className="mt-8 inline-flex items-center gap-2 text-primary hover:text-cocoa transition-colors font-medium">
+                View Product Details <ArrowRight size={18} />
+              </Link>
+            )}
             <div className="mt-10 flex items-center gap-3 text-xs uppercase tracking-[0.3em] text-cocoa/55">
               <span className="h-px w-8 bg-primary" />
               <span>SHAARAV · {accent}</span>

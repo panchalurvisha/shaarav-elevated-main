@@ -118,17 +118,5 @@ export const products = [
     name: "Jeera Powder",
     description: "Fine ground cumin jeera powder",
     image: productJeera,
-  },
-  {
-    id: "ginger-powder",
-    name: "Ginger Powder",
-    description: "Pure aromatic dry ginger powder",
-    image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&q=80&w=600",
-  },
-  {
-    id: "amchur-powder",
-    name: "Amchur Powder",
-    description: "Tangy dry green mango powder",
-    image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&q=80&w=600",
   }
 ];
