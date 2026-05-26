@@ -4,7 +4,13 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.jsx";
-import { InnerPage } from "./pages/InnerPage.jsx";
+import About from "./pages/About.jsx";
+import Products from "./pages/Products.jsx";
+import Quality from "./pages/Quality.jsx";
+import Sustainability from "./pages/Sustainability.jsx";
+import Export from "./pages/Export.jsx";
+import Contact from "./pages/Contact.jsx";
+import ProductDetail from "./pages/ProductDetail.jsx";
 import NotFound from "./pages/NotFound.jsx";
 
 const queryClient = new QueryClient();
@@ -17,12 +23,13 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/about" element={<InnerPage page="about" />} />
-          <Route path="/products" element={<InnerPage page="products" />} />
-          <Route path="/quality" element={<InnerPage page="quality" />} />
-          <Route path="/sustainability" element={<InnerPage page="sustainability" />} />
-          <Route path="/export" element={<InnerPage page="export" />} />
-          <Route path="/contact" element={<InnerPage page="contact" />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/quality" element={<Quality />} />
+          <Route path="/sustainability" element={<Sustainability />} />
+          <Route path="/export" element={<Export />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/products/:id" element={<ProductDetail />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
