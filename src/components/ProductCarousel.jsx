@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export function ProductCarousel({ products }) {
   const containerRef = useRef(null);
@@ -8,6 +9,8 @@ export function ProductCarousel({ products }) {
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isDragging, setIsDragging] = useState(false);
+  const navigate = useNavigate();
 
   // Triple the list of products for perfect infinite seamless scroll padding
   const duplicatedProducts = [...products, ...products, ...products];
@@ -62,9 +65,9 @@ export function ProductCarousel({ products }) {
     setActiveIndex(closestIndex % products.length);
   };
 
-  // Mouse Drag Events
   const handleMouseDown = (e) => {
     setIsMouseDown(true);
+    setIsDragging(false);
     setStartX(e.pageX - containerRef.current.offsetLeft);
     setScrollLeft(containerRef.current.scrollLeft);
   };
@@ -79,6 +82,11 @@ export function ProductCarousel({ products }) {
     e.preventDefault();
     const x = e.pageX - containerRef.current.offsetLeft;
     const walk = (x - startX) * 1.5; // Drag sensitivity
+    
+    if (Math.abs(walk) > 5) {
+      setIsDragging(true);
+    }
+    
     const el = containerRef.current;
     el.scrollLeft = scrollLeft - walk;
 
@@ -106,6 +114,11 @@ export function ProductCarousel({ products }) {
   const handleTouchMove = (e) => {
     const x = e.touches[0].pageX - containerRef.current.offsetLeft;
     const walk = (x - startX) * 1.5;
+    
+    if (Math.abs(walk) > 5) {
+      setIsDragging(true);
+    }
+    
     const el = containerRef.current;
     el.scrollLeft = scrollLeft - walk;
 
@@ -178,7 +191,12 @@ export function ProductCarousel({ products }) {
           return (
             <div
               key={`${product.id}-${idx}`}
-              className="product-card shrink-0 transition-all duration-500 ease-out transform"
+              onClick={() => {
+                if (!isDragging) {
+                  navigate(`/products/${product.id}`);
+                }
+              }}
+              className="product-card shrink-0 transition-all duration-500 ease-out transform cursor-pointer"
               style={{
                 width: "calc(100vw - 32px)", // Mobile: 1 visible
                 maxWidth: "280px", // Baseline max width
@@ -215,23 +233,6 @@ export function ProductCarousel({ products }) {
         })}
       </div>
 
-      {/* Premium minimal controller buttons */}
-      <div className="flex justify-center gap-4 mt-8">
-        <button
-          onClick={() => scroll("left")}
-          className="p-3 rounded-full border border-cocoa/20 text-cocoa hover:bg-primary hover:text-white hover:border-primary transition-all duration-300"
-          aria-label="Previous Products"
-        >
-          <ArrowLeft size={20} />
-        </button>
-        <button
-          onClick={() => scroll("right")}
-          className="p-3 rounded-full border border-cocoa/20 text-cocoa hover:bg-primary hover:text-white hover:border-primary transition-all duration-300"
-          aria-label="Next Products"
-        >
-          <ArrowRight size={20} />
-        </button>
-      </div>
 
       {/* Styled width overrides for responsive card viewport layouts */}
       <style dangerouslySetInnerHTML={{__html: `
