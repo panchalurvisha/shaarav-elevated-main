@@ -31,7 +31,7 @@ const Contact = () => (
             <a key={label} href={href} target={href.startsWith('https') ? '_blank' : undefined} rel={href.startsWith('https') ? 'noopener noreferrer' : undefined} className="border border-border bg-paper p-8 shadow-soft hover:shadow-deep hover:border-primary/40 transition-all duration-300 group block">
               <Icon className="text-primary" size={28} />
               <div className="mt-6 text-xs uppercase tracking-[0.3em] text-cocoa/55">{label}</div>
-              <p className="mt-3 font-display text-lg text-cocoa leading-snug group-hover:text-primary transition-colors">{value}</p>
+              <p className="mt-3 font-display text-lg text-cocoa leading-snug group-hover:text-primary transition-colors break-all md:break-words">{value}</p>
             </a>
           ))}
         </div>
