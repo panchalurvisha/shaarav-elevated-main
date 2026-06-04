@@ -53,16 +53,16 @@ function generateSection(s, index, accent, componentName) {
   const flip = index % 2 === 1;
   const bg = index % 2 ? "bg-surface" : "bg-background";
   const num = String(index + 1).padStart(2, "0");
-  
+
   let jsx = '';
-  
+
   if (s.image) {
     const linkStr = s.link ? `
               <Link to="${s.link}" className="block overflow-hidden relative shadow-deep group">
                 <img src={${s.image}} alt="${s.heading}" className="h-[64vh] w-full object-cover transition-transform duration-700 group-hover:scale-105" />
               </Link>` : `
               <img src={${s.image}} alt="${s.heading}" className="relative h-[64vh] w-full object-cover shadow-deep" />`;
-              
+
     const linkText = s.link ? `
             <Link to="${s.link}" className="mt-8 inline-flex items-center gap-2 text-primary hover:text-cocoa transition-colors font-medium">
               View Product Details <ArrowRight size={18} />
@@ -231,7 +231,7 @@ export const ${pullName} = () => (
       <p className="mx-auto mt-10 max-w-4xl font-display text-3xl leading-snug text-paper md:text-5xl">
         "${data.pull}"
       </p>
-      <div className="mt-10 text-xs uppercase tracking-[0.3em] text-paper/60">Shaarav Global Add EXIM</div>
+      <div className="mt-10 text-xs uppercase tracking-[0.3em] text-paper/60">Shaarav Global EXIM</div>
     </div>
   </section>
 );
@@ -283,7 +283,7 @@ import exportShip from "@/assets/export-ship-new.png";
   if (page === 'about') {
     pageJSX += `import { AboutJourney } from "@/components/about/AboutJourney";\n`;
   }
-  
+
   compNames.forEach(name => {
     pageJSX += `import { ${name} } from "@/components/${page}/${name}";\n`;
   });

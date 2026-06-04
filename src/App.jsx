@@ -30,7 +30,7 @@ const App = () => (
           <Route path="/export" element={<Export />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/products/:id" element={<ProductDetail />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          {/* ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

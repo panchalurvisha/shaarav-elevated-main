@@ -1,24 +1,24 @@
 
-  const heroSpices = "heroSpices";
-  const masalaBox = "masalaBox";
-  const productTurmeric = "productTurmeric";
-  const productChili = "productChili";
-  const productCoriander = "productCoriander";
-  const productGaram = "productGaram";
-  const farmerField = "farmerField";
-  const qualityLab = "qualityLab";
-  const spiceMarket = "spiceMarket";
-  const exportShip = "exportShip";
-  const worldMap = "worldMap";
-  const macroTurmeric = "macroTurmeric";
-  const macroChili = "macroChili";
-  const mortar = "mortar";
-  
-  const pageData = {
+const heroSpices = "heroSpices";
+const masalaBox = "masalaBox";
+const productTurmeric = "productTurmeric";
+const productChili = "productChili";
+const productCoriander = "productCoriander";
+const productGaram = "productGaram";
+const farmerField = "farmerField";
+const qualityLab = "qualityLab";
+const spiceMarket = "spiceMarket";
+const exportShip = "exportShip";
+const worldMap = "worldMap";
+const macroTurmeric = "macroTurmeric";
+const macroChili = "macroChili";
+const mortar = "mortar";
+
+const pageData = {
   about: {
     eyebrow: "About Shaarav",
     title: "A modern Indian spice house with editorial discipline.",
-    subtitle: "Shaarav Global Add EXIM connects deep Indian spice origins with the standards international buyers expect.",
+    subtitle: "Shaarav Global EXIM connects deep Indian spice origins with the standards international buyers expect.",
     image: farmerField,
     intro: {
       kicker: "Manifesto",
@@ -168,7 +168,7 @@
     sections: [
       { tag: "Email", heading: "hello@shaaravglobal.com", text: "Best for new inquiries with attached requirement files." },
       { tag: "Phone", heading: "+91 9023671539", text: "Direct line to the Shaarav trade desk." },
-      { tag: "Location", heading: "Shaarav Global Add EXIM, Mumbai.", text: "Office and coordination hub for sourcing, quality, and dispatch." },
+      { tag: "Location", heading: "Shaarav Global EXIM, Mumbai.", text: "Office and coordination hub for sourcing, quality, and dispatch." },
       { tag: "Requirement", heading: "What to share with us.", text: "Spice name, form, quantity, pack size, destination port, and required arrival window.", image: masalaBox },
       { tag: "Samples", heading: "Sample dispatch.", text: "Sample dispatch is offered for qualified import or distribution requirements after a short discovery call." },
       { tag: "Private label", heading: "Custom packs.", text: "Share artwork, pack structure, and target market — we will respond with feasibility and timing.", image: mortar },
@@ -178,5 +178,5 @@
     pull: "A clear requirement always gets a faster, sharper response.",
   },
 }
-  
-  module.exports = pageData;
+
+module.exports = pageData;
