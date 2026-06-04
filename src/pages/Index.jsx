@@ -33,7 +33,7 @@ import { QualityFirst } from "@/components/home/QualityFirst";
 import { Process } from "@/components/home/Process";
 import { ExportNetwork } from "@/components/home/ExportNetwork";
 import { SensoryDepth } from "@/components/home/SensoryDepth";
-import { PrivateLabel } from "@/components/home/PrivateLabel";
+
 import { MarketIntelligence } from "@/components/home/MarketIntelligence";
 import { Values } from "@/components/home/Values";
 import { Logistics } from "@/components/home/Logistics";
@@ -53,7 +53,7 @@ const Index = () => (
     <Process />
     <ExportNetwork />
     <SensoryDepth />
-    <PrivateLabel />
+
     <MarketIntelligence />
     <Values />
     <Logistics />

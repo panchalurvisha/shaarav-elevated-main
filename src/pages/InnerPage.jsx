@@ -20,41 +20,41 @@ import mortar from "@/assets/mortar-new.png";
 const pageData = {
   about: {
     eyebrow: "About Shaarav",
-    title: "A modern Indian spice house with editorial discipline.",
-    subtitle: "Shaarav Global Add EXIM connects deep Indian spice origins with the standards international buyers expect.",
+    title: "A modern Indian food product house with editorial discipline.",
+    subtitle: "Shaarav Global EXIM connects deep Indian agricultural origins with the standards international buyers expect.",
     image: farmerField,
     intro: {
       kicker: "Manifesto",
-      statement: "We treat spices the way fine houses treat tea, coffee, and olive oil — with origin clarity, batch honesty, and packaging that respects the product inside.",
+      statement: "We treat our products the way fine houses treat wine and olive oil — with origin clarity, batch honesty, and packaging that respects the product inside.",
       meta: [
         { label: "Founded", value: "India" },
         { label: "Focus", value: "Premium Export" },
         { label: "Discipline", value: "Sourcing · Process · Pack" },
-        { label: "Audience", value: "Retail · HoReCa · Private Label" },
+        { label: "Audience", value: "Retail · HoReCa · Bulk" },
       ],
     },
     sections: [
-      { tag: "Identity", heading: "A spice venture with a modern shelf in mind.", text: "Shaarav was founded to move Indian spices beyond the bulk-commodity mindset — into a category that respects design, documentation, and dependable quality.", image: spiceMarket },
-      { tag: "Purpose", heading: "Make authentic Indian spice easy to source.", text: "Retailers, importers, and foodservice teams need partners who think in SKUs, lead times, and consistency — not just kilos.", image: masalaBox },
+      { tag: "Identity", heading: "A product venture with a modern shelf in mind.", text: "Shaarav was founded to move Indian agricultural products beyond the bulk-commodity mindset — into a category that respects design, documentation, and dependable quality.", image: spiceMarket },
+      { tag: "Purpose", heading: "Make authentic Indian products easy to source.", text: "Retailers, importers, and foodservice teams need partners who think in SKUs, lead times, and consistency — not just kilos.", image: masalaBox },
       { tag: "Approach", heading: "Crop knowledge meets supply discipline.", text: "We blend agricultural understanding with quality-system thinking, so each shipment behaves the way the previous one did." },
       { tag: "People", heading: "Procurement, quality, packing, logistics — one team.", text: "A short, accountable supply chain protects flavour, colour, and freshness from field to carton.", image: qualityLab },
       { tag: "Standards", heading: "Moisture, aroma, colour, mesh, pack — checked.", text: "Every batch is reviewed against the spec before it earns dispatch clearance." },
       { tag: "Partnership", heading: "Built for buyers who repeat.", text: "Most of our work comes from buyers who plan multiple shipments — that shapes how we sample, price, and document.", image: exportShip },
-      { tag: "Promise", heading: "No basic mindset. Ever.", text: "Every Shaarav SKU must look, smell, and perform like a premium spice — never a generic commodity." },
+      { tag: "Promise", heading: "No basic mindset. Ever.", text: "Every Shaarav SKU must look, taste, and perform like a premium product — never a generic commodity." },
       { tag: "Next", heading: "Begin a trade conversation.", text: "Explore our catalogue or share a requirement — we will respond with feasibility, samples, and timing.", image: heroSpices },
     ],
-    pull: "We move Indian spice from anonymous sacks to named, documented, design-led packs — without losing the soul of the field.",
+    pull: "We move Indian products from anonymous sacks to named, documented, design-led packs — without losing the soul of the field.",
   },
   products: {
     eyebrow: "Products",
-    title: "A curated catalogue of whole spices, powders, and house blends.",
-    subtitle: "Built for fine grocers, supermarkets, importers, private labels, and food manufacturers.",
+    title: "A curated catalogue of whole spices, powdered spices, tea, coffee, millets, and herbs.",
+    subtitle: "Built for fine grocers, supermarkets, importers, and food manufacturers.",
     image: masalaBox,
     intro: {
       kicker: "The Catalogue",
       statement: "Each SHAARAV SKU is selected for colour value, aroma intensity, grind consistency, and shelf behaviour — not just price per kilo.",
       meta: [
-        { label: "Categories", value: "04" },
+        { label: "Categories", value: "06" },
         { label: "Active SKUs", value: "60+" },
         { label: "Pack Formats", value: "Pouch · Box · Jar · Bulk" },
         { label: "MOQ", value: "On Request" },
@@ -65,17 +65,17 @@ const pageData = {
       { tag: "Signature", heading: "SHAARAV Red Chilli", text: "Bright colour value, balanced heat — available across mild, medium, and hot SHU bands.", image: productChili, link: "/products/red-chilli" },
       { tag: "Signature", heading: "SHAARAV Coriander", text: "Fresh, citrus-green aroma. Available as seed and powder, with controlled mesh sizes.", image: productCoriander, link: "/products/coriander" },
       { tag: "Signature", heading: "SHAARAV Garam Masala", text: "A balanced house blend — the everyday backbone of Indian cooking, in a premium pack.", image: productGaram, link: "/products/garam-masala" },
-      { tag: "Whole spices", heading: "The supporting cast.", text: "Cumin, fennel, mustard, fenugreek, cloves, cardamom, cinnamon — sourced for aroma first." },
-      { tag: "Blends", heading: "Beyond the everyday.", text: "Kitchen King, Chana, Pav Bhaji, Biryani, Tea Masala — and custom recipes co-developed with you.", image: mortar },
+      { tag: "Whole spices", heading: "The supporting cast.", text: "Turmeric fingers, whole red chillies, cumin, fennel, mustard, fenugreek, cloves, cardamom, cinnamon — sourced for aroma first." },
+      { tag: "Tea, Coffee & Millets", heading: "Beverages & Ancient Grains.", text: "Premium handpicked Assam teas, shade-grown Western Ghats coffee beans, and nutrient-dense millets like Ragi (finger millet), Jowar (sorghum), and Barley.", image: "https://images.unsplash.com/photo-1597481499750-3e6b22637e12?q=80&w=800&auto=format&fit=crop" },
       { tag: "Pack formats", heading: "Built for every shelf.", text: "Soft-touch pouches, heritage cartons, apothecary jars, bulk kraft, and full export cartons." },
       { tag: "Buyer support", heading: "From sample to shipment.", text: "Specifications, label files, sample dispatch, and a clear handoff into repeat production.", image: macroTurmeric },
     ],
-    pull: "Selection is the work. Every SKU on the SHAARAV shelf is one we would proudly cook with at home.",
+    pull: "Selection is the work. Every SKU on the SHAARAV shelf is one we would proudly consume at home.",
   },
   quality: {
     eyebrow: "Quality",
     title: "Measured freshness. Controlled process. Confident dispatch.",
-    subtitle: "Each shipment passes through a defined chain of checks — from raw spice to sealed carton.",
+    subtitle: "Each shipment passes through a defined chain of checks — from raw material to sealed carton.",
     image: qualityLab,
     intro: {
       kicker: "The Standard",
@@ -88,9 +88,9 @@ const pageData = {
       ],
     },
     sections: [
-      { tag: "01", heading: "Raw material intake", text: "Incoming spices are inspected for freshness, impurities, aroma, and visual quality before they enter the line.", image: spiceMarket },
+      { tag: "01", heading: "Raw material intake", text: "Incoming raw materials are inspected for freshness, impurities, aroma, and visual quality before they enter the line.", image: spiceMarket },
       { tag: "02", heading: "Cleaning & sorting", text: "Mechanical cleaning, sieving, and sorting reduce foreign matter before grinding or packing." },
-      { tag: "03", heading: "Low-heat grinding", text: "Controlled grinding protects volatile aromas and natural colour value.", image: macroChili },
+      { tag: "03", heading: "Low-heat grinding", text: "Controlled grinding protects volatile aromas and natural colour value.", image: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=600&auto=format&fit=crop" },
       { tag: "04", heading: "Batch laboratory", text: "Moisture, mesh, colour value, volatile oil, and aroma are measured against the SKU specification." },
       { tag: "05", heading: "Packaging integrity", text: "Seal strength, fill weight, label clarity, and carton integrity are verified before sign-off.", image: masalaBox },
       { tag: "06", heading: "Traceability chain", text: "Every pack carries a batch link back to its sourcing, processing, and packing record." },
@@ -103,7 +103,7 @@ const pageData = {
     eyebrow: "Sustainability",
     title: "Responsible sourcing. Less waste. More respect.",
     subtitle: "Quiet, sensible choices in sourcing, packing, and logistics that protect long-term quality.",
-    image: spiceMarket,
+    image: "https://images.unsplash.com/photo-1597481499750-3e6b22637e12?q=80&w=600&auto=format&fit=crop",
     intro: {
       kicker: "Our Stance",
       statement: "Sustainability at Shaarav is structural — embedded in how we source, clean, pack, and ship — not a marketing layer.",
@@ -115,20 +115,20 @@ const pageData = {
       ],
     },
     sections: [
-      { tag: "Field", heading: "Closer to the farm.", text: "Direct and semi-direct relationships protect freshness and create visibility into how spices are grown and handled.", image: farmerField },
+      { tag: "Field", heading: "Closer to the farm.", text: "Direct and semi-direct relationships protect freshness and create visibility into how products are grown and handled.", image: farmerField },
       { tag: "Process", heading: "Cleaner handling, less loss.", text: "Sorting, grading, and pack planning reduce avoidable rejection and waste across the line." },
-      { tag: "Material", heading: "Honest packaging.", text: "We help buyers choose materials that protect the spice and respect the shelf — without overengineering." },
+      { tag: "Material", heading: "Honest packaging.", text: "We help buyers choose materials that protect the product and respect the shelf — without overengineering." },
       { tag: "Movement", heading: "Efficient shipping.", text: "Carton planning and consolidated shipments reduce unnecessary container space and freight movement.", image: exportShip },
       { tag: "Flavour", heading: "Quality preservation.", text: "Freshness control prevents reworks and rejections — the most under-discussed sustainability win." },
       { tag: "Community", heading: "Long-term partners.", text: "Growth depends on dependable supplier and processor relationships, not opportunistic trades.", image: mortar },
       { tag: "Transparency", heading: "Documented decisions.", text: "Clear batch and shipment information lets buyers make responsible purchasing calls." },
       { tag: "Future", heading: "Quiet, continuous improvement.", text: "We refine processes as buyer expectations and global standards evolve.", image: worldMap },
     ],
-    pull: "The most sustainable spice is the one that arrives perfect, sells through, and never needs to be remade.",
+    pull: "The most sustainable product is the one that arrives perfect, sells through, and never needs to be remade.",
   },
   export: {
     eyebrow: "Export",
-    title: "India-origin spices, prepared for international shelves.",
+    title: "India-origin products, prepared for international shelves.",
     subtitle: "Cartons, documents, pack formats, and logistics support engineered for global trade desks.",
     image: exportShip,
     intro: {
@@ -155,7 +155,7 @@ const pageData = {
   },
   contact: {
     eyebrow: "Contact",
-    title: "Tell Shaarav what spice shipment you need.",
+    title: "Tell Shaarav what product shipment you need.",
     subtitle: "Share product, grade, quantity, packaging, destination, and required timeline.",
     image: heroSpices,
     intro: {
@@ -171,10 +171,10 @@ const pageData = {
     sections: [
       { tag: "Email", heading: "hello@shaaravglobal.com", text: "Best for new inquiries with attached requirement files." },
       { tag: "Phone", heading: "+91 9023671539", text: "Direct line to the Shaarav trade desk." },
-      { tag: "Location", heading: "Shaarav Global Add EXIM, Mumbai.", text: "Office and coordination hub for sourcing, quality, and dispatch." },
-      { tag: "Requirement", heading: "What to share with us.", text: "Spice name, form, quantity, pack size, destination port, and required arrival window.", image: masalaBox },
+      { tag: "Location", heading: "Shaarav Global EXIM, Mumbai.", text: "Office and coordination hub for sourcing, quality, and dispatch." },
+      { tag: "Requirement", heading: "What to share with us.", text: "Product name, form, quantity, pack size, destination port, and required arrival window.", image: masalaBox },
       { tag: "Samples", heading: "Sample dispatch.", text: "Sample dispatch is offered for qualified import or distribution requirements after a short discovery call." },
-      { tag: "Private label", heading: "Custom packs.", text: "Share artwork, pack structure, and target market — we will respond with feasibility and timing.", image: mortar },
+      { tag: "Custom packaging", heading: "Custom packs.", text: "Share artwork, pack structure, and target market — we will respond with feasibility and timing.", image: mortar },
       { tag: "Bulk orders", heading: "Specification-led.", text: "Share grade, mesh, colour value, heat band, and documentation requirements upfront." },
       { tag: "Next step", heading: "From inquiry to dispatch.", text: "The team will review your requirement and respond with feasibility, sample plan, timing, and quote.", image: exportShip },
     ],
@@ -260,10 +260,10 @@ const renderSection = (s, index, accent) => {
 
 const AboutJourney = () => {
   const journeySteps = [
-    { year: "2010", title: "The Foundation", text: "Shaarav started with a simple vision to connect local spice farmers directly with regional markets, focusing purely on raw, unadulterated quality.", image: farmerField },
+    { year: "2010", title: "The Foundation", text: "Shaarav started with a simple vision to connect local farmers directly with regional markets, focusing purely on raw, unadulterated quality.", image: farmerField },
     { year: "2015", title: "Processing & Refining", text: "We established our first dedicated processing unit, allowing us to control grinding, cleaning, and sorting. This marked our shift towards premium standardisation.", image: mortar },
     { year: "2019", title: "Global Export Initiation", text: "With FSSAI and APEDA certifications secured, Shaarav began its first major export operations to the Middle East and European markets.", image: exportShip },
-    { year: "2024", title: "A Modern Spice House", text: "Today, Shaarav stands as a premium export partner, offering fully traceable, lab-tested, and private-label ready spices for discerning global brands.", image: qualityLab }
+    { year: "2024", title: "A Modern Product House", text: "Today, Shaarav stands as a premium export partner, offering fully traceable, lab-tested, and custom-packaged products for discerning global brands.", image: qualityLab }
   ];
 
   return (
@@ -273,32 +273,32 @@ const AboutJourney = () => {
           <span className="eyebrow">The Timeline</span>
           <h2 className="display-lg mt-6 text-cocoa">A journey of flavour, discipline, and growth.</h2>
         </div>
-        
+
         <div className="relative max-w-5xl mx-auto">
           {/* Vertical line - hidden on mobile, centered on desktop */}
           <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-primary/20 transform -translate-x-1/2" />
-          
+
           <div className="space-y-20 md:space-y-32">
             {journeySteps.map((step, index) => {
               const isEven = index % 2 === 0;
               return (
                 <div key={step.year} className={`relative flex flex-col md:flex-row items-center gap-10 md:gap-16 ${isEven ? 'md:flex-row-reverse' : ''}`}>
-                  
+
                   {/* Timeline dot (desktop only) */}
                   <div className="hidden md:block absolute left-1/2 top-1/2 w-4 h-4 bg-primary transform -translate-x-1/2 -translate-y-1/2 shadow-[0_0_0_8px_#fcfbf9]" />
-                  
+
                   {/* Content */}
                   <div className={`w-full md:w-1/2 ${isEven ? 'md:text-left' : 'md:text-right'}`}>
-                     <div className="inline-block px-4 py-2 bg-paper shadow-soft mb-6 text-sm font-display tracking-[0.2em] text-primary">{step.year}</div>
-                     <h3 className="font-display text-4xl text-cocoa">{step.title}</h3>
-                     <p className="mt-5 text-lg text-cocoa/75 leading-relaxed">{step.text}</p>
+                    <div className="inline-block px-4 py-2 bg-paper shadow-soft mb-6 text-sm font-display tracking-[0.2em] text-primary">{step.year}</div>
+                    <h3 className="font-display text-4xl text-cocoa">{step.title}</h3>
+                    <p className="mt-5 text-lg text-cocoa/75 leading-relaxed">{step.text}</p>
                   </div>
 
                   {/* Image */}
                   <div className="w-full md:w-1/2">
-                     <div className="aspect-[4/3] w-full overflow-hidden shadow-deep border border-border/50">
-                       <img src={step.image} alt={step.title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
-                     </div>
+                    <div className="aspect-[4/3] w-full overflow-hidden shadow-deep border border-border/50">
+                      <img src={step.image} alt={step.title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                    </div>
                   </div>
                 </div>
               );
@@ -361,7 +361,7 @@ export const InnerPage = ({ page }) => {
           <p className="mx-auto mt-10 max-w-4xl font-display text-3xl leading-snug text-paper md:text-5xl">
             "{data.pull}"
           </p>
-          <div className="mt-10 text-xs uppercase tracking-[0.3em] text-paper/60">Shaarav Global Add EXIM</div>
+          <div className="mt-10 text-xs uppercase tracking-[0.3em] text-paper/60">Shaarav Global EXIM</div>
         </div>
       </section>
 
@@ -387,8 +387,8 @@ export const InnerPage = ({ page }) => {
         <div className="container-x grid items-center gap-10 lg:grid-cols-12">
           <div className="lg:col-span-8">
             <span className="eyebrow">Next Step</span>
-            <h2 className="display-lg mt-6 text-cocoa">Ready to source premium Indian spice?</h2>
-            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-cocoa/70">Share spice, grade, pack format, and destination — the Shaarav trade desk will respond with feasibility, sample plan, and a quote.</p>
+            <h2 className="display-lg mt-6 text-cocoa">Ready to source premium Indian products?</h2>
+            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-cocoa/70">Share product type, grade, pack format, and destination — the Shaarav trade desk will respond with feasibility, sample plan, and a quote.</p>
           </div>
           <div className="lg:col-span-4">
             <Link to="/contact" className="inline-flex w-full items-center justify-center gap-3 bg-primary px-8 py-6 text-lg text-primary-foreground transition-colors hover:bg-cocoa">

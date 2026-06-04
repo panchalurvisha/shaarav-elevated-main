@@ -23,7 +23,7 @@ import { ExportCta } from "@/components/export/ExportCta";
 
 const Export = () => (
   <Layout>
-    <PageHero eyebrow="Export" title="India-origin spices, prepared for international shelves." subtitle="Cartons, documents, pack formats, and logistics support engineered for global trade desks." image={exportShip} />
+    <PageHero eyebrow="Export" title="India-origin products, prepared for international shelves." subtitle="Cartons, documents, pack formats, and logistics support engineered for global trade desks." image={exportShip} />
     <ExportIntro />
     <ExportFiveregionsonesupplystandard />
     <ExportCleanpaperwork />

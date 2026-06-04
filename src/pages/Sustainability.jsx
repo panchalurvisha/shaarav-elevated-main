@@ -23,7 +23,7 @@ import { SustainabilityCta } from "@/components/sustainability/SustainabilityCta
 
 const Sustainability = () => (
   <Layout>
-    <PageHero eyebrow="Sustainability" title="Responsible sourcing. Less waste. More respect." subtitle="Quiet, sensible choices in sourcing, packing, and logistics that protect long-term quality." image={spiceMarket} />
+    <PageHero eyebrow="Sustainability" title="Responsible sourcing. Less waste. More respect." subtitle="Quiet, sensible choices in sourcing, packing, and logistics that protect long-term quality." image="https://images.unsplash.com/photo-1597481499750-3e6b22637e12?q=80&w=600&auto=format&fit=crop" />
     <SustainabilityIntro />
     <SustainabilityClosertothefarm />
     <SustainabilityCleanerhandlinglessloss />

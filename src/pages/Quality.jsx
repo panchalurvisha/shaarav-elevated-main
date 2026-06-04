@@ -23,7 +23,7 @@ import { QualityCta } from "@/components/quality/QualityCta";
 
 const Quality = () => (
   <Layout>
-    <PageHero eyebrow="Quality" title="Measured freshness. Controlled process. Confident dispatch." subtitle="Each shipment passes through a defined chain of checks — from raw spice to sealed carton." image={qualityLab} />
+    <PageHero eyebrow="Quality" title="Measured freshness. Controlled process. Confident dispatch." subtitle="Each shipment passes through a defined chain of checks — from products to sealed cartons." image={qualityLab} />
     <QualityIntro />
     <QualityRawmaterialintake />
     <QualityCleaningsorting />

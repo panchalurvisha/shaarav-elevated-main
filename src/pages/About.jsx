@@ -17,7 +17,7 @@ import { AboutCta } from "@/components/about/AboutCta";
 
 const About = () => (
   <Layout>
-    <PageHero eyebrow="About Shaarav" title="A modern Indian spice house with editorial discipline." subtitle="Shaarav Global Add EXIM connects deep Indian spice origins with the standards international buyers expect." image={farmerField} />
+    <PageHero eyebrow="About Shaarav" title="A modern Indian food product house with editorial discipline." subtitle="Shaarav Global EXIM connects deep Indian agricultural origins with the standards international buyers expect." image={farmerField} />
     <AboutFounder />
     <AboutCompany />
     <AboutTeam />

@@ -10,7 +10,7 @@ import { ContactCta } from "@/components/contact/ContactCta";
 
 const Contact = () => (
   <Layout>
-    <PageHero eyebrow="Contact" title="Tell Shaarav what spice shipment you need." subtitle="Share product, grade, quantity, packaging, destination, and required timeline." image={heroSpices} />
+    <PageHero eyebrow="Contact" title="Tell Shaarav what product shipment you need." subtitle="Share product type, grade, quantity, packaging, destination, and required timeline." image={heroSpices} />
     <ContactIntro />
     <ContactForm />
 
@@ -21,11 +21,10 @@ const Contact = () => (
           <span className="eyebrow">Reach Us</span>
           <h2 className="display-md mt-6 text-cocoa">Direct lines to the Shaarav desk.</h2>
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
-            { Icon: Mail, label: "Email", value: "hello@shaaravglobalventures.com", href: "mailto:hello@shaaravglobalventures.com" },
-            { Icon: Phone, label: "Phone 1", value: "+91 99255 28021", href: "tel:+919925528021" },
-            { Icon: Phone, label: "Phone 2", value: "+91 90236 71539", href: "tel:+919023671539" },
+            { Icon: Mail, label: "Email", value: "info@shaaravglobalexim.com", href: "mailto:info@shaaravglobalexim.com" },
+            { Icon: Phone, label: "Phone", value: "+91 90236 71539", href: "tel:+919023671539" },
             { Icon: MapPin, label: "Office", value: "B7-1601, Waterlily, Adani Shantigram, Nr Vaishnodevi Circle, Ahmedabad-382421", href: "https://maps.google.com/?q=B7-1601+Waterlily+Adani+Shantigram+Ahmedabad+382421" },
           ].map(({ Icon, label, value, href }) => (
             <a key={label} href={href} target={href.startsWith('https') ? '_blank' : undefined} rel={href.startsWith('https') ? 'noopener noreferrer' : undefined} className="border border-border bg-paper p-8 shadow-soft hover:shadow-deep hover:border-primary/40 transition-all duration-300 group block">
