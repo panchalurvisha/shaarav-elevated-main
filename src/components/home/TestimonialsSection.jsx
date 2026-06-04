@@ -25,10 +25,10 @@ import heroVideo from "@/assets/12351626_3840_2160_30fps.mp4";
 const stats = ["1,500 + Happy Customers", "4 + years Years of Experience", "500 + Total Projects", "100% Export Quality"];
 const steps = ["Farm selection", "Cleaning", "Low-heat grinding", "Metal detection", "Aroma locking", "Export packing"];
 const testimonials = [
-  { quote: "Shaarav has completely transformed our spice supply chain...", author: "Elena R.", role: "Procurement Director", company: "EuroFoods" },
-  { quote: "Their export documentation and logistics readiness are simply top-tier...", author: "Michael T.", role: "Head of Operations", company: "Global Spice Co." },
-  { quote: "The private label service they offer is remarkably seamless...", author: "Aisha M.", role: "Founder", company: "Pure Flavours" },
-  { quote: "Finding a partner who understands the nuances of regional spice blends is rare...", author: "Rajiv S.", role: "Supply Chain Manager", company: "Desi Eats Inc." },
+  { quote: "Shaarav has completely transformed our product supply chain...", author: "Elena R.", role: "Procurement Director", company: "EuroFoods" },
+  { quote: "Their export documentation and logistics readiness are simply top-tier...", author: "Michael T.", role: "Head of Operations", company: "Global Foods Co." },
+  { quote: "The customized packaging service they offer is remarkably seamless...", author: "Aisha M.", role: "Founder", company: "Pure Flavours" },
+  { quote: "Finding a partner who understands the nuances of regional food products is rare...", author: "Rajiv S.", role: "Supply Chain Manager", company: "Desi Eats Inc." },
   { quote: "The traceability from farm to export carton gives us complete confidence...", author: "Sarah J.", role: "Quality Assurance Lead", company: "Organic Provisions" },
   { quote: "Shaarav’s apothecary jar packaging elevated our store shelves instantly...", author: "Marcus L.", role: "Retail Director", company: "Artisan Grocers UK" }
 ];

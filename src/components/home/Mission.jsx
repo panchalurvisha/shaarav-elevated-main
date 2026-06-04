@@ -38,7 +38,7 @@ export const Mission = () => (
       <div className="container-x grid items-center gap-12 lg:grid-cols-12">
         <div className="lg:col-span-5">
           <span className="eyebrow">Our Mission</span>
-          <h2 className="display-lg mt-5 text-cocoa">To deliver the authentic taste of India to kitchens across the globe by exporting high-quality whole and powdered spices.</h2>
+          <h2 className="display-lg mt-5 text-cocoa">To deliver the authentic taste of India to kitchens across the globe by exporting high-quality products including spices, tea, coffee, and millets.</h2>
         </div>
         <div className="lg:col-span-7">
           <p className="text-2xl leading-relaxed text-cocoa/80">
