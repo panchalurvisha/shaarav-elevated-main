@@ -33,12 +33,12 @@ const testimonials = [
   { quote: "Shaarav’s apothecary jar packaging elevated our store shelves instantly...", author: "Marcus L.", role: "Retail Director", company: "Artisan Grocers UK" }
 ];
 
-export const Catalogue = () => (
+export const Catalogue = ({ title = "Signature SHAARAV range", showLink = true }) => (
 <section className="section-screen bg-surface">
       <div className="container-x">
         <div className="mb-8 flex flex-col justify-between gap-4 md:flex-row md:items-end">
-          <div><span className="eyebrow">Catalogue</span><h2 className="display-md mt-4 text-cocoa">Signature SHAARAV range</h2></div>
-          <Link to="/products" className="inline-flex items-center gap-2 text-primary hover:text-cocoa">Full catalogue <ArrowRight size={18} /></Link>
+          <div><span className="eyebrow">Catalogue</span><h2 className="display-md mt-4 text-cocoa">{title}</h2></div>
+          {showLink && <Link to="/products" className="inline-flex items-center gap-2 text-primary hover:text-cocoa">Full catalogue <ArrowRight size={18} /></Link>}
         </div>
         <ProductCarousel products={catalogProducts} />
       </div>

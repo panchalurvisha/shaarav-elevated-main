@@ -36,7 +36,7 @@ const testimonials = [
 export const Process = () => (
 <section className="section-screen bg-paper">
       <div className="container-x">
-        <span className="eyebrow">Process</span><h2 className="display-md mt-5 max-w-3xl text-cocoa">A controlled route from raw spice to export carton.</h2>
+        <span className="eyebrow">Process</span><h2 className="display-md mt-5 max-w-3xl text-cocoa">A controlled route from raw materials to export carton.</h2>
         <div className="mt-10 grid gap-4 md:grid-cols-6">
           {steps.map((step, i) => <div key={step} className="min-h-40 border border-border bg-background p-5"><div className="text-sm text-primary">0{i + 1}</div><h3 className="mt-6 font-display text-2xl text-cocoa">{step}</h3></div>)}
         </div>

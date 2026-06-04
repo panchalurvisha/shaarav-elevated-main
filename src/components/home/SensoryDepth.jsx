@@ -21,6 +21,8 @@ import mortar from "@/assets/mortar-new.png";
 import macroTurmeric from "@/assets/premium-spices.png";
 import macroChili from "@/assets/macro-chili-new.png";
 import heroVideo from "@/assets/12351626_3840_2160_30fps.mp4";
+import coffeeBeansSensory from "@/assets/coffee-beans-sensory.png";
+import milletsSensory from "@/assets/millets-sensory.png";
 
 const stats = ["1,500 + Happy Customers", "4 + years Years of Experience", "500 + Total Projects", "100% Export Quality"];
 const steps = ["Farm selection", "Cleaning", "Low-heat grinding", "Metal detection", "Aroma locking", "Export packing"];
@@ -37,7 +39,7 @@ export const SensoryDepth = () => (
 <section className="section-screen bg-surface">
       <div className="container-x grid items-center gap-10 lg:grid-cols-3">
         <div><span className="eyebrow">Sensory Depth</span><h2 className="display-md mt-5 text-cocoa">Colour, aroma, grind, and freshness made visible.</h2></div>
-        {[macroTurmeric, macroChili].map((img, i) => <img key={img} src={img} alt={i === 0 ? "Macro turmeric texture" : "Macro red chilli texture"} className="h-[62vh] w-full object-cover shadow-soft" />)}
+        {[coffeeBeansSensory, milletsSensory].map((img, i) => <img key={i} src={img} alt={i === 0 ? "Premium Coffee Beans" : "Organic Millets"} className="h-[62vh] w-full object-cover shadow-soft" />)}
       </div>
     </section>
 );
