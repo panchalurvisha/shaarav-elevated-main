@@ -7,14 +7,14 @@ export const Footer = () => (
     <div className="container-x py-20 grid md:grid-cols-12 gap-10">
       <div className="md:col-span-4">
         <div className="flex items-center gap-3">
-          <img src={logo} alt="Shaarav" className="h-10 w-10 invert opacity-90" width={40} height={40} />
+          <img src={logo} alt="Shaarav" className="h-10 w-10 brightness-0 invert opacity-90" width={40} height={40} />
           <div>
             <div className="font-display text-2xl">SHAARAV</div>
-            <div className="text-[10px] tracking-[0.3em] uppercase text-paper/60">Global Add EXIM</div>
+            <div className="text-[10px] tracking-[0.3em] uppercase text-paper/60">Global EXIM</div>
           </div>
         </div>
         <p className="mt-6 text-paper/70 max-w-sm leading-relaxed">
-          Authentic Indian spices, sourced from trusted farms and exported with uncompromising care to kitchens across the world.
+          Authentic Indian Products, sourced from trusted farms and exported with uncompromising care to kitchens across the world.
         </p>
         <div className="flex gap-4 mt-6">
           <a href="#" className="p-2 border border-paper/20 hover:border-primary hover:text-primary transition" aria-label="Instagram"><Instagram size={16} /></a>
@@ -37,24 +37,24 @@ export const Footer = () => (
         <ul className="space-y-2 text-paper/80">
           <li>Whole Spices</li>
           <li>Powdered Spices</li>
-          <li>Masala Blends</li>
-          <li>Herbs & Seeds</li>
-          <li>Private Label</li>
+          <li>Tea</li>
+          <li>Coffee</li>
+          <li>Millets</li>
+          <li>Herbs and seeds</li>
         </ul>
       </div>
       <div className="md:col-span-3">
         <div className="text-xs uppercase tracking-[0.25em] text-paper/50 mb-4">Contact</div>
         <ul className="space-y-3 text-paper/80 text-sm">
           <li className="flex gap-3"><MapPin size={16} className="mt-1 shrink-0" /> <a href="https://maps.google.com/?q=B7-1601+Waterlily+Adani+Shantigram+Ahmedabad+382421" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">B7-1601, Waterlily, Adani Shantigram, Nr Vaishnodevi Circle, Ahmedabad-382421</a></li>
-          <li className="flex gap-3"><Phone size={16} className="mt-1 shrink-0" /> <a href="tel:+919925528021" className="hover:text-primary transition-colors">+91 99255 28021</a></li>
           <li className="flex gap-3"><Phone size={16} className="mt-1 shrink-0" /> <a href="tel:+919023671539" className="hover:text-primary transition-colors">+91 90236 71539</a></li>
-          <li className="flex gap-3"><Mail size={16} className="mt-1 shrink-0" /> <a href="mailto:hello@shaaravglobalventures.com" className="hover:text-primary transition-colors">hello@shaaravglobalventures.com</a></li>
+          <li className="flex gap-3"><Mail size={16} className="mt-1 shrink-0" /> <a href="mailto:info@shaaravglobalexim.com" className="hover:text-primary transition-colors">info@shaaravglobalexim.com</a></li>
         </ul>
       </div>
     </div>
     <div className="border-t border-paper/10">
       <div className="container-x py-6 flex flex-col md:flex-row gap-3 items-center justify-between text-xs text-paper/50">
-        <div>© {new Date().getFullYear()} Shaarav Global Add EXIM. All rights reserved.</div>
+        <div>© {new Date().getFullYear()} Shaarav Global EXIM. All rights reserved.</div>
         <div className="flex gap-6">
           <a href="#" className="hover:text-primary">Privacy</a>
           <a href="#" className="hover:text-primary">Terms</a>
