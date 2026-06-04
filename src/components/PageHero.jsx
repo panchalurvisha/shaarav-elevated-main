@@ -21,13 +21,13 @@ export const PageHero = ({ eyebrow, title, subtitle, image }) => (
         <div className="border-l border-primary/40 pl-6">
           <div className="text-xs uppercase tracking-[0.3em] text-cocoa/60">Chapter</div>
           <div className="mt-3 font-display text-6xl text-primary">— I</div>
-          <p className="mt-4 text-sm leading-relaxed text-cocoa/65">An editorial walk through Shaarav's premium spice practice — sourcing, science, and shelf craft.</p>
+          <p className="mt-4 text-sm leading-relaxed text-cocoa/65">An editorial walk through Shaarav's premium Products practice — sourcing, science, and shelf craft.</p>
         </div>
       </div>
     </div>
     <div className="container-x relative z-10 mt-12 hidden md:block">
       <div className="flex items-center justify-between border-t border-cocoa/15 pt-5 text-xs uppercase tracking-[0.3em] text-cocoa/55">
-        <span>Shaarav Global Add EXIM</span>
+        <span>Shaarav Global EXIM</span>
         <span>India · Origin</span>
         <span>Premium Editorial</span>
         <span>Vol. 26 · 2026</span>
