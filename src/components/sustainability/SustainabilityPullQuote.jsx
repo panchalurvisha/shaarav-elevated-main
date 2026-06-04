@@ -19,7 +19,7 @@ export const SustainabilityPullQuote = () => (
       <p className="mx-auto mt-10 max-w-4xl font-display text-3xl leading-snug text-paper md:text-5xl">
         "The most sustainable spice is the one that arrives perfect, sells through, and never needs to be remade."
       </p>
-      <div className="mt-10 text-xs uppercase tracking-[0.3em] text-paper/60">Shaarav Global Add EXIM</div>
+      <div className="mt-10 text-xs uppercase tracking-[0.3em] text-paper/60">Shaarav Global EXIM</div>
     </div>
   </section>
 );
