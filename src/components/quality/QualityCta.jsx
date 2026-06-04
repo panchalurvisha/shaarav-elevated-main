@@ -7,8 +7,8 @@ export const QualityCta = () => (
     <div className="container-x grid items-center gap-10 lg:grid-cols-12">
       <div className="lg:col-span-8">
         <span className="eyebrow">Next Step</span>
-        <h2 className="display-lg mt-6 text-cocoa">Ready to source premium Indian spice?</h2>
-        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-cocoa/70">Share spice, grade, pack format, and destination — the Shaarav trade desk will respond with feasibility, sample plan, and a quote.</p>
+        <h2 className="display-lg mt-6 text-cocoa">Ready to source premium Indian products?</h2>
+        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-cocoa/70">Share product type, grade, pack format, and destination — the Shaarav trade desk will respond with feasibility, sample plan, and a quote.</p>
       </div>
       <div className="lg:col-span-4">
         <Link to="/contact" className="inline-flex w-full items-center justify-center gap-3 bg-primary px-8 py-6 text-lg text-primary-foreground transition-colors hover:bg-cocoa">

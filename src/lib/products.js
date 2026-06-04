@@ -16,7 +16,52 @@ import productPavBhaji from "../assets/pav-bhaji-bowl.png";
 import productBiryani from "../assets/biryani-bowl.png";
 import productJeera from "../assets/jeera-bowl.png";
 
+// New category images
+import categoryWholeSpices from "../assets/whole-spices-bowl.png";
+import categoryPowderedSpices from "../assets/powdered-spices-bowl.png";
+import categoryTea from "../assets/tea-leaves-bowl.png";
+import categoryCoffee from "../assets/coffee-beans-bowl.png";
+import categoryMillets from "../assets/millets-grains-bowl.png";
+import categoryHerbsSeeds from "../assets/herbs-seeds-bowl.png";
+import productTurmericFingers from "../assets/turmeric-fingers-bowl.png";
+
 export const products = [
+  {
+    id: "whole-spices-category",
+    name: "Whole Spices",
+    description: "Premium cardamom, pepper, cloves & cinnamon",
+    image: categoryWholeSpices,
+  },
+  {
+    id: "powdered-spices-category",
+    name: "Powdered Spices",
+    description: "High-curcumin turmeric, vibrant chilli & coriander",
+    image: categoryPowderedSpices,
+  },
+  {
+    id: "tea-category",
+    name: "Tea",
+    description: "Rich, bold and aromatic Assam tea leaves",
+    image: categoryTea,
+  },
+  {
+    id: "coffee-category",
+    name: "Coffee",
+    description: "High-altitude shade-grown aromatic coffee beans",
+    image: categoryCoffee,
+  },
+  {
+    id: "millets-category",
+    name: "Millets",
+    description: "Nutrient-dense ancient grains like Ragi, Jowar & Barley",
+    image: categoryMillets,
+  },
+  {
+    id: "herbs-seeds-category",
+    name: "Herbs and seeds",
+    description: "Aromatic basil, oregano, fennel & mustard seeds",
+    image: categoryHerbsSeeds,
+  },
   {
     id: "turmeric-powder",
     name: "SHAARAV Turmeric Powder",
@@ -118,5 +163,35 @@ export const products = [
     name: "Jeera Powder",
     description: "Fine ground cumin jeera powder",
     image: productJeera,
+  },
+  {
+    id: "turmeric-fingers",
+    name: "SHAARAV Turmeric Fingers",
+    description: "Premium grade whole polished turmeric fingers",
+    image: productTurmericFingers,
+  },
+  {
+    id: "whole-red-chillies",
+    name: "SHAARAV Whole Red Chillies",
+    description: "Sun-dried premium whole red chillies with stem/stemless",
+    image: productChili,
+  },
+  {
+    id: "assam-tea",
+    name: "SHAARAV Premium Assam Tea",
+    description: "Rich, bold and aromatic black tea leaves",
+    image: categoryTea,
+  },
+  {
+    id: "western-ghats-coffee",
+    name: "SHAARAV Western Ghats Coffee",
+    description: "High-altitude shade-grown aromatic coffee",
+    image: categoryCoffee,
+  },
+  {
+    id: "finger-millet",
+    name: "SHAARAV Finger Millet (Ragi)",
+    description: "100% organic, nutrient-dense ancient grain",
+    image: categoryMillets,
   }
 ];
