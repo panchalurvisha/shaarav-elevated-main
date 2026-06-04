@@ -32,10 +32,10 @@ export const ContactCustompacks = () => (
           <div className="flex items-center gap-4">
             <span className="font-display text-5xl text-primary">06</span>
             <span className="h-px flex-1 bg-border" />
-            <span className="text-xs uppercase tracking-[0.3em] text-cocoa/55">Private label</span>
+            <span className="text-xs uppercase tracking-[0.3em] text-cocoa/55">Custom packaging</span>
           </div>
           <h2 className="display-md mt-8 text-cocoa">Custom packs.</h2>
-          <p className="mt-6 text-lg leading-relaxed text-cocoa/75">Share artwork, pack structure, and target market — we will respond with feasibility and timing.</p>
+          <p className="mt-6 text-lg leading-relaxed text-cocoa/75">Share packaging specifications, weight requirements, and destination — we will respond with feasibility and timing.</p>
           <div className="mt-10 flex items-center gap-3 text-xs uppercase tracking-[0.3em] text-cocoa/55">
             <span className="h-px w-8 bg-primary" />
             <span>SHAARAV · Contact</span>

@@ -13,7 +13,7 @@ export const AboutPullQuote = () => (
       <p className="mx-auto mt-10 max-w-4xl font-display text-3xl leading-snug text-paper md:text-5xl">
         "Whether we are structuring a generational wealth succession plan or securing a cross-border supply chain, the core objective remains identical: absolute precision, transparent governance, and sustainable value creation."
       </p>
-      <div className="mt-10 text-xs uppercase tracking-[0.3em] text-paper/60">Shrruti Mehta Jobanputra</div>
+      <div className="mt-10 text-xs uppercase tracking-[0.3em] text-paper/60">Shruti Mehta Jobanputra</div>
     </div>
   </section>
 );

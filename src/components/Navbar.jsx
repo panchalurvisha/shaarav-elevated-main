@@ -35,7 +35,7 @@ export const Navbar = () => {
           <img src={logo} alt="Shaarav" className="h-10 w-10" width={40} height={40} />
           <div className="leading-none">
             <div className="font-display text-xl tracking-wide text-cocoa">SHAARAV</div>
-            <div className="text-[10px] tracking-[0.3em] uppercase text-muted-foreground">Global Add EXIM</div>
+            <div className="text-[10px] tracking-[0.3em] uppercase text-muted-foreground">Global EXIM</div>
           </div>
         </Link>
         <nav className="hidden lg:flex items-center gap-8">

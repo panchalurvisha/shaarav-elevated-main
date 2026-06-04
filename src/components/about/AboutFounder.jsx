@@ -6,8 +6,8 @@ export const AboutFounder = () => (
       <div className="lg:col-span-5 relative">
         <div className="aspect-[4/5] w-full overflow-hidden shadow-deep border border-border/50 bg-background/50">
           <img 
-            src="/assets/founder_shrruti.png" 
-            alt="Shrruti Mehta Jobanputra" 
+            src="/assets/founder_shruti.png" 
+            alt="Shruti Mehta Jobanputra" 
             className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" 
             onError={(e) => {
                e.target.src = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop";
@@ -17,20 +17,20 @@ export const AboutFounder = () => (
       </div>
       <div className="lg:col-span-7">
         <span className="eyebrow">The Founder</span>
-        <h2 className="display-md mt-6 text-cocoa">Shrruti Mehta Jobanputra</h2>
+        <h2 className="display-md mt-6 text-cocoa">Shruti Mehta Jobanputra</h2>
         <p className="mt-2 text-lg text-primary font-display tracking-wide">
           Founder | Investment Consultant | Global Business Strategist
         </p>
         
         <div className="mt-8 space-y-6 text-cocoa/75 text-lg leading-relaxed">
           <p>
-            Shrruti Mehta Jobanputra is the Founder of Shaarav Enterprise and Shaarav Global Exim, focused on financial consulting and global business solutions.
+            Shruti Mehta Jobanputra is the Founder of Shaarav Enterprise and Shaarav Global Exim, focused on financial consulting and global business solutions.
           </p>
           <p>
             With expertise in finance, investments, and entrepreneurship, she delivers practical strategies that support sustainable growth and long-term value.
           </p>
           <p>
-            Driven by professionalism and a value-centric approach, Shrruti is committed to creating businesses built on trust, impact, and growth.
+            Driven by professionalism and a value-centric approach, Shruti is committed to creating businesses built on trust, impact, and growth.
           </p>
         </div>
         

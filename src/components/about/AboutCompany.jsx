@@ -17,17 +17,17 @@ export const AboutCompany = () => (
           </p>
           <div className="w-12 h-px bg-primary/40 my-6"></div>
           <p className="text-lg text-cocoa/75 leading-relaxed">
-            We stand as a trusted name in the world of spices, bringing the rich aroma, purity & tradition of Indian flavors to kitchens across the globe. Sourced directly from the finest farms & cultivated under natural conditions, each item is handpicked and hygienically processed to retain its natural oils and powerful flavor profiles.
+            We stand as a trusted name in the world of spices, tea, coffee, and Millets, bringing the rich aroma, purity & tradition of Indian flavors to kitchens across the globe. Sourced directly from the finest farms & cultivated under natural conditions, each item is handpicked and hygienically processed to retain its natural oils and powerful flavor profiles.
           </p>
         </div>
 
-        {/* Spices Image Block */}
+        {/* Products Image Block */}
         <div className="bg-paper border border-border/50 shadow-soft overflow-hidden relative group min-h-[300px]">
            <img 
              src="/assets/spices_processing.png" 
-             alt="Handpicked Spices" 
+             alt="Handpicked Products" 
              className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" 
-             onError={(e) => { e.target.src = "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=600&auto=format&fit=crop"; }} 
+             onError={(e) => { e.target.src = "https://images.unsplash.com/photo-1447933601403-0c6688de566e?q=80&w=600&auto=format&fit=crop"; }} 
            />
         </div>
 
