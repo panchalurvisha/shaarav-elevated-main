@@ -9,7 +9,7 @@ export const ProductsIntro = () => (
         <h2 className="display-md mt-6 text-cocoa">In brief.</h2>
         <p className="mt-6 text-cocoa/65">A short orientation before the chapters.</p>
         <div className="mt-10 border-t border-border">
-          {[{"label":"Categories","value":"04"},{"label":"Active SKUs","value":"60+"},{"label":"Pack Formats","value":"Pouch · Box · Jar · Bulk"},{"label":"MOQ","value":"On Request"}].map((m) => (
+          {[{ "label": "Categories", "value": "06" }, { "label": "Active SKUs", "value": "60+" }, { "label": "Pack Formats", "value": "Pouch · Box · Jar · Bulk" }, { "label": "MOQ", "value": "On Request" }].map((m) => (
             <div key={m.label} className="flex items-baseline justify-between border-b border-border py-4">
               <span className="text-xs uppercase tracking-[0.3em] text-cocoa/55">{m.label}</span>
               <span className="font-display text-lg text-cocoa">{m.value}</span>

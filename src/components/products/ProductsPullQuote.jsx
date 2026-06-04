@@ -19,7 +19,7 @@ export const ProductsPullQuote = () => (
       <p className="mx-auto mt-10 max-w-4xl font-display text-3xl leading-snug text-paper md:text-5xl">
         "Selection is the work. Every SKU on the SHAARAV shelf is one we would proudly cook with at home."
       </p>
-      <div className="mt-10 text-xs uppercase tracking-[0.3em] text-paper/60">Shaarav Global Add EXIM</div>
+      <div className="mt-10 text-xs uppercase tracking-[0.3em] text-paper/60">Shaarav Global EXIM</div>
     </div>
   </section>
 );

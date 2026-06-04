@@ -25,17 +25,17 @@ export const ProductsBeyondtheeveryday = () => (
         <div className="lg:col-span-7 lg:order-2">
           <div className="relative">
             <div className="absolute -right-6 -top-6 hidden h-32 w-32 border border-primary/40 lg:block" />
-              <img src={mortar} alt="Beyond the everyday." className="relative h-[64vh] w-full object-cover shadow-deep" />
+              <img src="https://images.unsplash.com/photo-1597481499750-3e6b22637e12?q=80&w=800&auto=format&fit=crop" alt="Tea, coffee, and millets." className="relative h-[64vh] w-full object-cover shadow-deep" />
           </div>
         </div>
         <div className="lg:col-span-5 lg:order-1">
           <div className="flex items-center gap-4">
             <span className="font-display text-5xl text-primary">06</span>
             <span className="h-px flex-1 bg-border" />
-            <span className="text-xs uppercase tracking-[0.3em] text-cocoa/55">Blends</span>
+            <span className="text-xs uppercase tracking-[0.3em] text-cocoa/55">Tea, Coffee & Millets</span>
           </div>
-          <h2 className="display-md mt-8 text-cocoa">Beyond the everyday.</h2>
-          <p className="mt-6 text-lg leading-relaxed text-cocoa/75">Kitchen King, Chana, Pav Bhaji, Biryani, Tea Masala — and custom recipes co-developed with you.</p>
+          <h2 className="display-md mt-8 text-cocoa">Beverages & Ancient Grains.</h2>
+          <p className="mt-6 text-lg leading-relaxed text-cocoa/75">Premium handpicked Assam teas, shade-grown Western Ghats coffee beans, and nutrient-dense millets like Ragi (finger millet), Jowar (sorghum), and Barley.</p>
           <div className="mt-10 flex items-center gap-3 text-xs uppercase tracking-[0.3em] text-cocoa/55">
             <span className="h-px w-8 bg-primary" />
             <span>SHAARAV · Products</span>

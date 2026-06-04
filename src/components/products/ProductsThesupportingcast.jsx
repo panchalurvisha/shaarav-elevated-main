@@ -30,7 +30,7 @@ export const ProductsThesupportingcast = () => (
             </div>
             <h2 className="display-md mt-6 max-w-3xl text-cocoa">The supporting cast.</h2>
           </div>
-          <p className="text-lg leading-relaxed text-cocoa/70 lg:col-span-5">Cumin, fennel, mustard, fenugreek, cloves, cardamom, cinnamon — sourced for aroma first.</p>
+          <p className="text-lg leading-relaxed text-cocoa/70 lg:col-span-5">Turmeric fingers, whole red chillies, cumin, fennel, mustard, fenugreek, cloves, cardamom, cinnamon — sourced for aroma first.</p>
         </div>
         <div className="mt-12 grid gap-px bg-border md:grid-cols-4">
           {[
