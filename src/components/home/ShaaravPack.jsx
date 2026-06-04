@@ -51,14 +51,14 @@ export const ShaaravPack = () => (
           <span className="eyebrow">The SHAARAV Pack</span>
           <h2 className="display-lg mt-5 text-cocoa">Packaging that earns its place on premium shelves.</h2>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-cocoa/75">
-            Heritage-grade cartons, soft-touch pouches, and apothecary jars — each piece carries the SHAARAV mark with quiet confidence, built for retail floors, fine grocers, and discerning private-label houses.
+            Heritage-grade cartons, soft-touch pouches, and apothecary jars — each piece carries the SHAARAV mark with quiet confidence, built for retail floors, fine grocers, and bulk distribution.
           </p>
           <div className="mt-10 grid gap-px bg-border sm:grid-cols-2">
             {[
               { k: "01", t: "Heritage Cartons", d: "Rigid board, foil-stamped SHAARAV mark." },
               { k: "02", t: "Aroma-Lock Pouches", d: "Triple-layer barrier, resealable seam." },
               { k: "03", t: "Apothecary Jars", d: "Glass with cork-finish closure." },
-              { k: "04", t: "Private Label", d: "Full artwork & SKU adaptation service." },
+              { k: "04", t: "Bulk Sacks", d: "Multi-wall kraft bags and bulk containers." },
             ].map((i) => (
               <div key={i.k} className="bg-paper p-6">
                 <div className="flex items-baseline gap-3">

@@ -36,8 +36,8 @@ const testimonials = [
 export const Sourcing = () => (
 <section className="section-screen bg-background">
       <div className="container-x grid items-center gap-12 lg:grid-cols-12">
-        <div className="lg:col-span-5"><span className="eyebrow">Sourcing</span><h2 className="display-lg mt-5 text-cocoa">Closer to fields, cleaner in flavour.</h2><p className="mt-6 text-lg leading-relaxed text-cocoa/70">We work across spice-growing regions to secure freshness, aroma, and colour before processing begins.</p></div>
-        <div className="lg:col-span-7"><img src={farmerField} alt="Farm sourcing for Shaarav spices" className="h-[68vh] w-full object-cover shadow-deep" /></div>
+        <div className="lg:col-span-5"><span className="eyebrow">Sourcing</span><h2 className="display-lg mt-5 text-cocoa">Closer to fields, cleaner in flavour.</h2><p className="mt-6 text-lg leading-relaxed text-cocoa/70">We work across diverse cultivation regions for spices, tea, coffee, and millets to secure freshness and aroma before processing begins.</p></div>
+        <div className="lg:col-span-7"><img src={farmerField} alt="Farm sourcing for Shaarav products" className="h-[68vh] w-full object-cover shadow-deep" /></div>
       </div>
     </section>
 );

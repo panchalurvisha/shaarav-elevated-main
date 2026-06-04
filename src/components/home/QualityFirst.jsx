@@ -36,7 +36,7 @@ const testimonials = [
 export const QualityFirst = () => (
 <section className="section-screen bg-surface">
       <div className="container-x grid items-center gap-10 lg:grid-cols-2">
-        <img src={qualityLab} alt="Quality lab testing for Shaarav spice batches" className="h-[68vh] w-full object-cover shadow-deep" />
+        <img src={qualityLab} alt="Quality lab testing for Shaarav product batches" className="h-[68vh] w-full object-cover shadow-deep" />
         <div><span className="eyebrow">Quality First</span><h2 className="display-lg mt-5 text-cocoa">Every batch earns its shipment.</h2><p className="mt-6 text-lg leading-relaxed text-cocoa/75">Moisture, colour value, mesh size, volatile oil, impurities, packaging strength, and documentation are checked before dispatch.</p><div className="mt-8 space-y-3">{["Batch traceability", "Lab-backed parameters", "Hygienic handling", "Buyer-specific specs"].map((x) => <div key={x} className="flex gap-3"><ShieldCheck className="mt-1 text-primary" size={20} /><span className="text-cocoa/80">{x}</span></div>)}</div></div>
       </div>
     </section>
